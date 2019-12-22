@@ -1,15 +1,39 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Src</title>
+    <title>sasaco</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous">
   </head>
 
   <body>
+    <header>
+      <div class="header-logo">
+        <%= link_to 'sasaco', root_path %>
+      </div>
+      <ul class="header-menus">
+        <li>
+          <%= link_to '#' do %>
+            <i class="fas fa-user-plus"></i>会員登録
+          <% end %>
+        </li>
+        <li>
+          <%= link_to '#' do %>
+            <i class="fas fa-sign-in-alt"></i>ログイン
+          <% end %>
+        </li>
+        <li>
+          <%= link_to '#' do %>
+            <i class="fas fa-sign-out-alt"></i>ログアウト
+          <% end %>
+        </li>
+      </ul>
+    </header>
+    
     <%= yield %>
   </body>
 </html>
