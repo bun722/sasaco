@@ -5,7 +5,7 @@ margin: 0;
 
 /* header ============================= */
 nav {
-  background-color: #FFC107;
+  background-color: #fff;
 }
 
 nav ul {
@@ -20,7 +20,7 @@ nav ul {
 nav a {
   display: block;
   padding: 12px 24px;
-  color:white;
+  color: #333;
   font-size:15px;
   text-decoration:none;
 }
@@ -29,11 +29,39 @@ nav li.menu-logo {
   margin-right: auto;
 }
 
+.logo {
+  font-size: 30px;
+}
+
 
 /* top ================================ */
 
 h1, h2, h3, h4, p {
   margin: 0;
+}
+
+.fixed-bg {
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg01 {
+  background-image: url(sasazuka-image2.jpg);
+  filter: grayscale(100%);
+}
+
+.bg02 {
+  background-image: url(sasazuka-image2.jpg);
+}
+
+.bg-color01 {
+  background:#eee;
+}
+
+.bg-color02 {
+  background:#ccc;
 }
 
 .btn-gradient-radius {
