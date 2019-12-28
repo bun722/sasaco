@@ -1,0 +1,79 @@
+body {
+font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic';
+margin: 0;
+}
+
+/* header ============================= */
+nav {
+  background-color: #fff;
+}
+
+nav ul {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 6px;
+  list-style-type: none;
+}
+
+nav a {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-size:15px;
+  text-decoration:none;
+}
+
+nav li.menu-logo {
+  margin-right: auto;
+}
+
+.logo {
+  font-size: 30px;
+}
+
+
+/* top ================================ */
+
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+.fixed-bg {
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.top-image-grayscale {
+  background-image: url(sasazuka-image2.jpg);
+  filter: grayscale(100%);
+}
+
+.top-image {
+  background-image: url(sasazuka-image2.jpg);
+}
+
+.bg-color01 {
+  background:#eee;
+}
+
+.bg-color02 {
+  background:#ccc;
+}
+
+.top-singin-btn {
+  display: inline-block;
+  padding: 7px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #FFF;
+  background-image: linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
+  transition: .4s;
+}
+
+.top-singin-btn:hover {
+  background-image: linear-gradient(45deg, #FFC107 0%, #f76a35 100%);
+}
