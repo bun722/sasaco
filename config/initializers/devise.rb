@@ -10,6 +10,22 @@ Devise.setup do |config|
   # by default. You can change it below and use your own secret key.
   # config.secret_key = 'e3030ec495fd50c538c68bae5f8fee3f134549061edb128e790c6f80a87ddb6582f21c82aa0f8075adead724819a4fe905f39f183660e7da35229c4f11b9d4c7'
 
+  config.omniauth :facebook, ENV['FACEBOOK_ID'], ENV['FACEBOOK_SECRET'],
+  {
+    :secure_image_url => 'true',
+    :image_size => 'large'
+   }
+  config.omniauth :twitter, ENV['TWITTER_ID'], ENV['TWITTER_SECRET'],
+  {
+    :secure_image_url => 'true',
+    :image_size => 'original'
+  }
+  config.omniauth :google_oauth2, ENV['GOOGLE_ID'], ENV['GOOGLE_SECRET']
+  {
+    :secure_image_url => 'true',
+    :image_size => 'original'
+  }
+
   # ==> Controller configuration
   # Configure the parent class to the devise controllers.
   # config.parent_controller = 'DeviseController'
