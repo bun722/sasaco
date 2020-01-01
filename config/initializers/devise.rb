@@ -20,7 +20,7 @@ Devise.setup do |config|
     :secure_image_url => 'true',
     :image_size => 'original'
   }
-  config.omniauth :google_oauth2, ENV['GOOGLE_ID'], ENV['GOOGLE_SECRET']
+  config.omniauth :google_oauth2, ENV['GOOGLE_ID'], ENV['GOOGLE_SECRET'], skip_jwt: true
   {
     :secure_image_url => 'true',
     :image_size => 'original'
