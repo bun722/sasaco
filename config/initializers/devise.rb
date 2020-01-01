@@ -15,7 +15,7 @@ Devise.setup do |config|
     :secure_image_url => 'true',
     :image_size => 'large'
    }
-  config.omniauth :twitter, ENV['TWITTER_ID'], ENV['TWITTER_SECRET'],
+  config.omniauth :twitter, ENV['TWITTER_ID'], ENV['TWITTER_SECRET'], callback_url: 'http://localhost:3000/users/auth/twitter/callback'
   {
     :secure_image_url => 'true',
     :image_size => 'original'
