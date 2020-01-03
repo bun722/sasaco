@@ -9,6 +9,8 @@ ja:
         image: "プロフィール画像"
         email: "メールアドレス"
         password: "パスワード"
+        password_confirmation: "パスワード（確認）"
+        remember_me: "ログインしたままにする"
   devise: #deviseに関するエラーメッセージ等の日本語化
     confirmations:
       confirmed: "アカウントが正常に確認されました。"
