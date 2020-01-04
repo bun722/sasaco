@@ -22,7 +22,9 @@
 
           <% if user_signed_in? %>
           <li>
-            <%= current_user.name %>
+            <%= link_to edit_user_registration_path do %>
+            <i class="fas fa-user"></i><%= current_user.name %>
+            <% end %>
           </li>
 
           <li>
