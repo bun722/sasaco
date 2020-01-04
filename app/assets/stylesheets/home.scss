@@ -193,14 +193,14 @@ input[type=password] {
   border-color: #DD5144;
 }
 
-.register-login {
+.register-login,.unregister,.back-to-top {
   margin-top: 20px;
   text-align: center;
   padding-top: 15px;
   border-top: 1px solid;
 }
 
-a.login-link {
+a {
   text-decoration-line: none;
   color: #333;
 }

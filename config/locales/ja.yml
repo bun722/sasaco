@@ -10,6 +10,7 @@ ja:
         email: "メールアドレス"
         password: "パスワード"
         password_confirmation: "パスワード（確認）"
+        current_password: "現在のパスワード"
         remember_me: "ログインしたままにする"
   devise: #deviseに関するエラーメッセージ等の日本語化
     confirmations:
