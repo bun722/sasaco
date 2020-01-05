@@ -11,27 +11,44 @@
   </head>
 
   <body>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
     <header>
       <nav>
         <ul>
           <li class="menu-logo">
             <%= link_to 'sasaco', root_path, class:"logo" %>
           </li>
+
+          <% if user_signed_in? %>
           <li>
-            <%= link_to '#' do %>
-              <i class="fas fa-user-plus"></i>会員登録
+            <%= link_to edit_user_registration_path do %>
+            <i class="fas fa-user"></i><%= current_user.name %>
             <% end %>
           </li>
+
           <li>
-            <%= link_to '#' do %>
-              <i class="fas fa-sign-in-alt"></i>ログイン
-            <% end %>
-          </li>
-          <li>
-            <%= link_to '#' do %>
+            <%= link_to destroy_user_session_path, method: :delete do %>
               <i class="fas fa-sign-out-alt"></i>ログアウト
             <% end %>
           </li>
+
+          <% else %>
+
+          <li>
+            <%= link_to new_user_registration_path, class: 'post' do %>
+              <i class="fas fa-user-plus"></i>会員登録
+            <% end %>
+          </li>
+
+          <li>
+            <%= link_to new_user_session_path, class: 'post' do %>
+              <i class="fas fa-sign-in-alt"></i>ログイン
+            <% end %>
+          </li>
+
+          <% end %>
+
         </ul>
       </nav>
     </header>
