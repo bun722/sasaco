@@ -21,7 +21,7 @@ class User < ApplicationRecord
     user
   end
 
-  def update_without_current_password(params, *options)
+  def update_without_current_password(params)
     params.delete(:current_password)
 
     if params[:password].blank? && params[:password_confirmation].blank?
@@ -29,7 +29,7 @@ class User < ApplicationRecord
       params.delete(:password_confirmation)
     end
 
-    result = update_attributes(params, *options)
+    result = update_attributes(params)
     clean_up_passwords
     result
   end
