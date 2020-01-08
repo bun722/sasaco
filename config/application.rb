@@ -35,5 +35,7 @@ module Src
     config.i18n.default_locale = :ja
     config.time_zone = 'Asia/Tokyo'
 
+    config.autoload_paths += Dir[Rails.root.join('app', 'uploaders')]
+
   end
 end
