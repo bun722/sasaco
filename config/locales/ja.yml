@@ -12,6 +12,15 @@ ja:
         password_confirmation: "パスワード（確認）"
         current_password: "現在のパスワード"
         remember_me: "ログインしたままにする"
+    errors:
+      models:
+        post:
+          attributes:
+            content:
+              blank: "が空白です。"
+              too_long: "は140文字以内で入力してください。"
+            image:
+              blank: "を添付してください。"
   devise: #deviseに関するエラーメッセージ等の日本語化
     confirmations:
       confirmed: "アカウントが正常に確認されました。"
