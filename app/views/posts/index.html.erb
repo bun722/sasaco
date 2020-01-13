@@ -1,7 +1,26 @@
-<h1>Posts#index</h1>
-<p>Find me in app/views/posts/index.html.erb</p>
-<% @posts.each do |post| %>
-  <%= post.user.name %>">
-  <%= image_tag post.image.url %>
-  <p>(<%= post.id %>)<%= post.content %></p>
-<% end %>
+<div class="post-index-wrapper">
+  <% @posts.each do |post| %>
+    <div class="container">
+      <%= link_to post_path(post.id) do %>
+        <%= image_tag post.image.url, class: 'image' %>
+      <% end %>
+    </div>
+  <% end %>
+</div>
+
+<!-- <section class="cards">
+  <article>
+    <img class="article-img" src="thumbnail.jpg" alt=" " />
+    <h1 class="article-title">
+      Title of article
+    </h1>
+  </article>
+  <article>
+    <img class="article-img" src="thumbnail.jpg" alt=" " />
+    <h1 class="article-title">
+      Title of article
+    </h1>
+  </article>
+  ...
+  ...
+</section> -->

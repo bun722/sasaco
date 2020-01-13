@@ -1,3 +1,137 @@
-// Place all the styles related to the posts controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
+/* posts/index ===================================== */
+.post-index-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 5px;
+}
+
+.post-index-wrapper {
+  max-width: 960px;
+  margin: 30px auto 30px;
+}
+
+.container {
+  position: relative;
+  height: 300px;
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* posts/show ===================================== */
+.post-show-wrapper {
+  width: 500px;
+  height: 800px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.title-container {
+  padding: 0 10px;
+}
+
+.title-container p {
+  font-size: 20px;
+
+}
+.image-container {
+  height: 500px;
+  width: 100%;
+}
+
+.show-image {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.content-container {
+  padding: 15px 10px;
+}
+
+ul {
+  text-decoration: none;
+  display: flex;
+  margin:0px;
+  padding:0px;
+}
+
+li {
+  list-style: none;
+}
+
+.far {
+  font-size: 30px;
+  margin: 8px;
+}
+
+.fa-heart {
+  color: #8899a6;
+}
+
+.back {
+  margin: 15px;
+  text-align: center;
+}
+
+/* posts/new ===================================== */
+.post-new-container {
+  width: 350px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.post-new-title {
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.post-form {
+  font: 15px/24px sans-serif;
+	box-sizing: border-box;
+	width: 100%;
+	margin: 6px 0;
+	padding: 0.3em;
+	transition: 0.3s;
+	border: 1px solid #1b2538;
+	border-radius: 4px;
+	outline: none;
+}
+.post-form:focus {
+	border-color: #00c4cc;
+}
+
+input[type=text] {
+	padding-left: 15px;
+}
+
+input[type=email] {
+	padding-left: 15px;
+}
+
+input[type=password] {
+	padding-left: 15px;
+}
+
+.post-submit {
+  background-color: #00c4cc;
+  border: 1px solid #00c4cc;
+  border-radius: 4px;
+  color: #fff;
+  display: inline-block;
+  font-size: 18px;
+  height: 50px;
+  width: 100%;
+	margin: 8px 0;
+	padding: 0.3em;
+	transition: 0.3s;
+  text-decoration: none;
+}
