@@ -1,2 +1,22 @@
-<h1>Posts#show</h1>
-<p>Find me in app/views/posts/show.html.erb</p>
+<div class="post-show-wrapper">
+  <div class="title-container">
+    <p><%= @post.user.name %></p>
+  </div>
+  <div class="image-container">
+    <%= image_tag @post.image.url, class: "show-image" %>
+  </div>
+  <ul class="action-container">
+    <li>
+      <i class="far fa-heart"></i>
+    </li>
+    <li>
+      <i class="far fa-comment-dots"></i>
+    </li>
+  </ul>
+  <div class="content-container">
+    <%= @post.content %>
+  </div>
+  <div class="back">
+    <%= link_to "一覧に戻る", posts_path, class: "back-top-link" %>
+  </div>
+</div>
