@@ -40,3 +40,6 @@ yarn-debug.log*
 
 # post uploads image
 public/uploads/post
+
+# Development materials
+app/assets/images
