@@ -8,6 +8,11 @@ WORKDIR /src
 COPY Gemfile /src/Gemfile
 COPY Gemfile.lock /src/Gemfile.lock
 RUN bundle install
+
+COPY package.json .
+COPY yarn.lock .
+RUN yarn install
+
 COPY . /src
 
 COPY entrypoint.sh /usr/bin/
