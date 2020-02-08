@@ -37,5 +37,7 @@ module Src
 
     config.autoload_paths += Dir[Rails.root.join('app', 'uploaders')]
 
+    config.hosts << "sasaco.herokuapp.com"
+
   end
 end
