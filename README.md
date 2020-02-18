@@ -1,5 +1,4 @@
-<div align="center">![sasaco-fulllogo-black](https://user-images.githubusercontent.com/57316572/74603641-089ff180-50f9-11ea-9f23-15b19022a925.png)</div>
----
+![sasaco-fulllogo-black](https://user-images.githubusercontent.com/57316572/74603641-089ff180-50f9-11ea-9f23-15b19022a925.png)
 
 **sasaco**は渋谷区笹塚のおすすめスポットやお店を写真付きの投稿でシェアできるコミュニケーションサイトです。
 
